@@ -8,7 +8,34 @@
     <title>f1m2js</title>
 </head>
 <body>
-    <h1>Museum online javascript </h1>
+    <h1 id="kopje">Museum online javascript </h1>
+    <p id="mkblauw">maak achtergrond blauw</p>
+    <p id="mkgroen">maak achtergrond groen</p>
+    <script>
+        const kopje = document.getElementById("kopje");
+        const mkblauw = document.getElementById("mkblauw");
+        const mkgroen = document.getElementById("mkgroen");
+        kopje.addEventListener('click',voeruitkopje);
+        mkblauw.addEventListener('click',voeruitblauw);
+        mkgroen.addEventListener('click',voeruitgroen);
+
+        function voeruitkopje(){
+            kopje.style.backgroundColor = "pink";
+            kopje.style.color = "yellow";
+        }
+        function voeruitblauw(){
+            document.body.style.backgroundColor = "blue";
+            document.body.style.color = "yellow";
+            kopje.style.backgroundColor = "black";
+            kopje.style.color = "red";
+        }
+        function voeruitgroen(){
+            document.body.style.backgroundColor = "green";
+            document.body.style.color = "red";
+            kopje.style.backgroundColor = "black";
+            kopje.style.color = "yellow";
+        }
+    </script>
     
 </body>
 </html>
