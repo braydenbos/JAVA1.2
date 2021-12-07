@@ -1,0 +1,14 @@
+body{
+    padding: 5px;
+    margin: 5px;
+}
+.button{
+    background-color: lightgrey;
+    padding: 5px;
+    margin: 5px;
+    width: 52px;
+}
+.button:hover{
+    background-color: black;
+    color: white;
+}

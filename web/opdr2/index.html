@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slideshow gallerij</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>slideshow gallerij</h1>
+    <div class="button" onclick="imgp1()">next</div>
+    <div class="button" onclick="imgm1()">previous</div>
+    <img id="img" width="2000" height="2000" src="https://i1.sndcdn.com/artworks-q1ISIzLyy1eczavf-JdQc1Q-t500x500.jpg">
+    <script>
+        var position = 0;
+        console.log("position is " + position)
+        var img1= "https://i1.sndcdn.com/artworks-q1ISIzLyy1eczavf-JdQc1Q-t500x500.jpg"
+        var img2= "https://i.ytimg.com/vi/jDEwbsWj2Qo/hqdefault.jpg"
+        var img3= "https://i.imgflip.com/55lrtj.gif"
+        var img4= "https://i.ytimg.com/vi/ehmIaJRfTX0/maxresdefault.jpg"
+        var img5= "https://i.ytimg.com/vi/sBxEr4frYl0/mqdefault.jpg"
+        var img6= "https://i.kym-cdn.com/entries/icons/original/000/033/421/cover2.jpg"
+        var img7= "https://wompampsupport.azureedge.net/fetchimage?siteId=7575&v=2&jpgQuality=100&width=700&url=https%3A%2F%2Fi.kym-cdn.com%2Fphotos%2Fimages%2Fnewsfeed%2F000%2F002%2F110%2Flongcat.jpg%3F1241726484"
+        var imgElement = document.getElementById("img");
+        function imgp1(){
+                position = position + 1
+                setimage();
+        }
+        function imgm1(){
+                position = position - 1
+                setimage();
+        }
+        function setimage(){
+            if (position == -1)
+                position = 6
+                console.log("position is " + position)
+            if (position == 7)
+                position = 0
+                console.log("position is " + position)
+            if (position == 0){
+                imgElement.src = img1;
+            }
+            if (position == 1){
+                imgElement.src = img2;
+            }
+            if (position == 2){
+                imgElement.src = img3;
+            }
+            if (position == 3){
+                imgElement.src = img4;
+            }
+            if (position == 4){
+                imgElement.src = img5;
+            }
+            if (position == 5){
+                imgElement.src = img6;
+            }
+            if (position == 6){
+                imgElement.src = img7;
+            }
+
+        }
+    </script>
+</body>
+</html>
