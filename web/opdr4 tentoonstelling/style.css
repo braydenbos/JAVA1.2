@@ -29,9 +29,11 @@ h1{
 
 }
 img{
+    display: flex;
+    align-items: center;
 }
 h2{     
-    width: 120px;
+    width: 400px;
     margin: auto;
     padding: 5px;
 
