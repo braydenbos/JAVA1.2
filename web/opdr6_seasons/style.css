@@ -1,0 +1,18 @@
+#container{
+    background-color: gray;
+    width: 340px;
+    height: 370px;
+    margin: 100px auto auto auto;
+}
+img{
+    margin: auto auto auto 20px;
+}
+.first{
+    margin-left: 40px;
+}
+.title{
+    margin-left: 120px;
+}
+body{
+    background-color: antiquewhite;
+}

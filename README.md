@@ -10,3 +10,5 @@
 [opdracht4](http://32762.hosts1.ma-cloud.nl/JAVA/opdr4/)
 
 [opdracht5](http://32762.hosts1.ma-cloud.nl/JAVA/opdr5/)
+
+[opdracht6](http://32762.hosts1.ma-cloud.nl/JAVA/opdr6/)
