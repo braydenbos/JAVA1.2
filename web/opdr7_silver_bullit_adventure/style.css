@@ -1,0 +1,20 @@
+body{
+    background-color: aqua;
+}
+
+#container{
+    background-color: aliceblue;
+    width: 900px;
+    height: 600px;
+    margin: 50px auto auto auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    border: inset 2px black;
+    border-radius: 5px;
+}
+#myinteraction{
+    padding: 10px;
+}
+#myinput{
+    width: 10px;
+}
