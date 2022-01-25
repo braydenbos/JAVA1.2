@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kat</title>
+</head>
+
+<body>
+    <script>
+        const kat = {
+            naam: "Dog",
+            leeftijd: 55,
+            foto: "https://placekitten.com/500/506"
+        };
+        console.log(kat.naam);
+        console.log(kat.leeftijd);
+        console.log(kat.foto);
+
+        let nHeader =document.createElement("h1");
+        nHeader.innerHTML ="Naam: "+kat.naam;
+        document.body.appendChild(nHeader);
+
+        let nHeader2 =document.createElement("h1");
+        nHeader2.innerHTML ="Leeftijd: "+kat.leeftijd;
+        document.body.appendChild(nHeader2);
+
+        let nHeader3 =document.createElement("h1");
+        nHeader3.innerHTML ="Foto:";
+        document.body.appendChild(nHeader3);
+
+        let nImg =document.createElement("img");
+        nImg.src =kat.foto;
+        document.body.appendChild(nImg);
+    </script>
+</body>
+
+</html>

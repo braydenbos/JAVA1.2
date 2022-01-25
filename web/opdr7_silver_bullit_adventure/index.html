@@ -12,8 +12,13 @@
         <img id="myimage" src="img/0.jpg" height="600px" alt="foto display">
         <div id="myinteraction">
             <div id="mytitle">plaats 0</div>
-            <input type="text" id="myinput" autocomplete="off">
-            <input type="button" value="ga naar" onclick="getinput()">
+            <h3>kies wele richting je op wilt:</h3>
+            <nav>
+                <button id="KnopNoord" onclick="goDirection('noord')">Noord</button>
+                <button id="KnopWest" onclick="goDirection('west')">West</button><button id="KnopOost" onclick="goDirection('oost')">Oost</button>
+                <button id="KnopZuid" onclick="goDirection('zuid')">Zuid</button>
+            </nav>
+            <img id="map" src="img/map_compass.png" alt="Map van de silver bullet">
         </div>
     </div>
     <script src="script.js"></script>

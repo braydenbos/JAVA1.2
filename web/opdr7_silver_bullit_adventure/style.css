@@ -1,5 +1,5 @@
 body{
-    background-color: aqua;
+    background-color: #DFCFBE;
 }
 
 #container{
@@ -9,12 +9,38 @@ body{
     margin: 50px auto auto auto;
     display: grid;
     grid-template-columns: auto auto auto;
-    border: inset 2px black;
+    border: inset 5px black;
     border-radius: 5px;
+}
+#myimage{
+    border-right: inset 5px black;
 }
 #myinteraction{
     padding: 10px;
 }
 #myinput{
     width: 10px;
+}
+#map{
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+nav button{
+    background-color: brown;
+    color: white;
+    padding: 10px;
+}
+#KnopNoord, #KnopZuid{
+    display:block;
+    width: 300px;
+    margin: auto;
+}
+#KnopOost, #KnopWest{
+    display:inline-block;
+    width: 150px;
+}
+#KnopWest{
+    margin-left: 22%;
 }
